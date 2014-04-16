@@ -3,8 +3,14 @@ require 'json'
 require 'date'
 
 class Snaas < Sinatra::Application
+
+  get '/' do
+    markdown File.read(File.join('public', 'index.md'))
+  end
+
   get '/names' do
-    'list of names'
+ 
+
   end
 
   get '/names/:name' do
@@ -34,4 +40,28 @@ class Snaas < Sinatra::Application
   get '/doggpound' do
     'random photo of snoop'
   end
+
+  name_list = [
+    {
+      :name => "Calvin Cordozar Broadus, Jr.",
+      :start_year => 1971
+    },
+    {
+      :name => "Snoop Doggy Dogg",
+      :start_year => 1992,
+    },
+    {
+      :name => "Snoop Dizzle",
+      :start_year => 2002
+    },
+    {
+      :name => "Snoop Lion",
+      :start_year => 2012
+    },
+    {
+      :name => "DJ Snoopadelic",
+      :start_year => 2012
+    }
+  ]
+
 end
