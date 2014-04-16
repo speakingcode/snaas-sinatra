@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class Snaas < Sinatra::Applicaton
+class Snaas < Sinatra::Application
   get '/names' do
     'list of names'
   end
