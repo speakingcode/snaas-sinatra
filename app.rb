@@ -1,6 +1,11 @@
 require 'sinatra/base'
 require 'json'
 require 'date'
+require 'sinatra/cross_origin'
+
+configure do
+  enable :cross_origin
+end
 
 class Snaas < Sinatra::Application
 
