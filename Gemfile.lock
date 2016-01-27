@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     rack (1.5.2)
-    rack-cors (0.4.0)
     rack-protection (1.5.3)
       rack
     rdiscount (2.1.7.1)
@@ -17,7 +16,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack-cors
   rdiscount
   sinatra
   sinatra-cross_origin (~> 0.3.1)
