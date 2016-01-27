@@ -3,11 +3,13 @@ require 'json'
 require 'date'
 require 'sinatra/cross_origin'
 
-configure do
-  enable :cross_origin
-end
 
 class Snaas < Sinatra::Application
+  register Sinatra::CrossOrigin
+  
+  configure do
+    enable :cross_origin
+  end
 
   get '/' do
     markdown File.read(File.join('public', 'index.md'))
