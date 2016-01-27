@@ -3,7 +3,7 @@
 Snoop as a Service is a RESTfizzle APIzzle service for retrieving data about Snoop Doggy Dogg. Now your web-enabled applications can conveniently keep it O.G. fa rizzle.
 
 
-<img src="snoop.jpg" width="25%" />
+<img src="public/snoop.jpg" width="25%" />
 
 
 ## Endpoints
