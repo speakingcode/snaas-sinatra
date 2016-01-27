@@ -33,7 +33,8 @@ class Snaas < Sinatra::Application
       :blunts_per_day       => 81,
       :blunts_in_life       => blunts_in_life,
       :est_grams_per_blunt  => 1.4,
-      :total_grams          => 1.4 * blunts_in_life
+      :total_grams          => 1.4 * blunts_in_life,
+      :total_pounds         => 1.4 * blunts_in_life / 448
     }.to_json
   end
 
